@@ -1,1 +1,1 @@
-# Capstone-Project-2-Personal-Siite
+# Capstone-Project-2-Personal-Site
