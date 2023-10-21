@@ -1,0 +1,178 @@
+/*Universal*/
+
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+  color: #141E46;
+}
+
+/*Hero Section*/
+
+#hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  margin-bottom: 30px;
+}
+
+#prof{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/*Resume Section*/
+
+#resume{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px
+}
+
+/* Work Section */
+
+#work{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px
+}
+
+.cert{
+  height: 300px;
+  width: 350px;
+}
+
+/*About Section*/ 
+
+#about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  margin-bottom: 50px;
+}
+
+.team{
+  height: 400px;
+  width: 400px;
+}
+
+.take{
+  grid-column: span 2;
+  text-align: center;
+}
+
+/*Contact Section*/
+
+#contact{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.media{
+  height: 50px;
+  width: 50px;
+}
+
+/*Media Queries*/
+
+@media (min-width: 319px) and (max-width: 480px){
+  #work{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cert{
+    width: 100%;
+  }
+
+  #rpic{
+    width: 100%;
+  }
+
+  .media{
+    height: 30px;
+    width: 30px;
+  }
+
+  #about{
+    grid-template-columns: 1fr;
+  }
+  
+  .team{
+    height: 75%;
+    width: 75%;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 1200px){
+  #work{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cert{
+    width: 400px;
+  }
+
+  #rpic{
+    width: 400px;
+  }
+
+  .media{
+    height: 40px;
+    width: 40px;
+  }
+
+  .team{
+    height: 150px;
+    width: 150px;
+  }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1600px){
+  
+  #work{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cert{
+    width: 500px;
+  }
+
+  #rpic{
+    width: 500px;
+  }
+
+  .team{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 1601px) {
+  
+  
+  .cert{
+    width: 500px;
+  }
+
+  #rpic{
+    width: 600px;
+  }
+
+}
